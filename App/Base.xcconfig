@@ -1,0 +1,13 @@
+// Build settings for the PebbleRemote app and its UI audit (project.yml's configFiles point here for Debug and
+// Release). Signing is your own: copy Local.xcconfig.example to Local.xcconfig (git-ignored) and set your team and
+// your bundle id prefix there. The optional include below reads it when present. Without it the project still builds
+// for the simulator, and Xcode asks for a team before it installs on an iPhone.
+
+// The bundle ids are $(BUNDLE_ID_PREFIX).PebbleRemote and $(BUNDLE_ID_PREFIX).PebbleRemoteUIAudit. The default prefix
+// is the original author's; free provisioning gives a bundle id to one team only, so set your own in Local.xcconfig.
+BUNDLE_ID_PREFIX = io.github.tohin003
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).PebbleRemote
+DEVELOPMENT_TEAM =
+CODE_SIGN_STYLE = Automatic
+
+#include? "Local.xcconfig"

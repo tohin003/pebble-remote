@@ -1,0 +1,15 @@
+.build/
+.build-lock/
+.swiftpm/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata/
+.DS_Store
+Local.xcconfig
+bridge-mock/state/
+*.p12
+*.key
+*.pem
+build/
+__pycache__/

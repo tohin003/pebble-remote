@@ -1,0 +1,105 @@
+# XcodeGen 2.46 spec for Pebble Remote's app target. Generate once Xcode is installed (never during a Pebble HOLD):
+#   /opt/homebrew/bin/xcodegen generate        # writes PebbleRemote.xcodeproj next to this file
+# The app target is a thin shell (App/) over this repository's Swift package; every screen is in PebbleRemoteUI.
+# Signing: both targets read App/Base.xcconfig, which includes the git-ignored App/Local.xcconfig (copy
+# App/Local.xcconfig.example). Set your team (DEVELOPMENT_TEAM) and your bundle id prefix (BUNDLE_ID_PREFIX) there;
+# the project names no team. DEVELOPMENT_TEAM=... on the xcodebuild command line also works.
+# PebbleRemoteUIAudit (lane U, docs/lanes/U-brief.md): the XCUITest audit that taps through the in-app demo
+# (UIAudit/), with its own scheme; the PebbleRemote scheme has no tests.
+name: PebbleRemote
+
+options:
+  deploymentTarget:
+    iOS: "26.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+
+packages:
+  PebbleRemoteKit:
+    path: .
+
+targets:
+  PebbleRemote:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: App
+        excludes:
+          - Info.plist
+          - "*.xcconfig"
+          - "*.xcconfig.example"
+    configFiles:
+      Debug: App/Base.xcconfig
+      Release: App/Base.xcconfig
+    settings:
+      base:
+        INFOPLIST_FILE: App/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - package: PebbleRemoteKit
+        product: PebbleRemoteUI
+      - package: PebbleRemoteKit
+        product: PebbleRemoteKit
+    scheme:
+      gatherCoverageData: false
+
+  # The UI audit: XCUITest drives the Debug app, launched with -PebbleUIAudit 1 (the in-app demo only, never a Mac,
+  # no Face ID). It reads the app's words from PebbleDesign, so a renamed string fails the build, not the run.
+  PebbleRemoteUIAudit:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: UIAudit
+    configFiles:
+      Debug: App/Base.xcconfig
+      Release: App/Base.xcconfig
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: "$(BUNDLE_ID_PREFIX).PebbleRemoteUIAudit"
+        TEST_TARGET_NAME: PebbleRemote
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - target: PebbleRemote
+      - package: PebbleRemoteKit
+        product: PebbleDesign
+      - package: PebbleRemoteKit
+        product: PebbleProtocol
+
+schemes:
+  PebbleRemoteUIAudit:
+    build:
+      targets:
+        PebbleRemote: [running, testing]
+        PebbleRemoteUIAudit: [testing]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - name: PebbleRemoteUIAudit
+          parallelizable: false
+          randomExecutionOrder: false

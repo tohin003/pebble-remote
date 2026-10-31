@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5534F4AB15CDD6AD507C7B /* AuditSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3629912325D01EADDDECC5C8 /* AuditSession.swift */; };
+		1FF8B7B0C2408B79165553A1 /* Tour+Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C237DDF6190F3303B3217FC /* Tour+Conversation.swift */; };
+		239C8CB693A7C78F9084C78D /* Tour+Looks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0706D0507493B28CE3468E /* Tour+Looks.swift */; };
+		2C97262B4C464F6C1165A5A8 /* AuditLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F645520F7EF916F39C690453 /* AuditLog.swift */; };
+		2DF015350C82907472C5E8C8 /* AuditSession+Sweep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA02BBB3318558F0795BE7 /* AuditSession+Sweep.swift */; };
+		3376AEE194B76193ADB9434F /* PebbleRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20991B9C079B1C948E19C69E /* PebbleRemoteApp.swift */; };
+		3D85F861DC13AC7274B93D88 /* PebbleRemoteUI in Frameworks */ = {isa = PBXBuildFile; productRef = 894564D22804AE3C65BE3474 /* PebbleRemoteUI */; };
+		555D326655696F511DD2B212 /* PebbleRemoteKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C08F7DF88D05F8E3261B880 /* PebbleRemoteKit */; };
+		690BEA95855165DE3A72211D /* PebbleDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 2C8E2CD9BDF67347E1BE4DAE /* PebbleDesign */; };
+		71F5F8233C157C91B0F967E3 /* Tour+Walkthroughs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267026F5069F6B94FEF826FB /* Tour+Walkthroughs.swift */; };
+		9EEDD6A222512F134F988CA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A62048842FAFC4EFE41816 /* Assets.xcassets */; };
+		B0204F40878D58944A6927BA /* Tour+PebbleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74D45248937ABE77037358 /* Tour+PebbleTab.swift */; };
+		BB7F4C04B6C29C28B4C5F97C /* Tour+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C3F03505790BEE0C6CE0B /* Tour+Control.swift */; };
+		DB1DC8576C738979901EE636 /* PebbleProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6BA19BD755269E1AD59117 /* PebbleProtocol */; };
+		DE4E6C840DDAFBE25D83EC1D /* PebbleRemoteUIAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66263B684D145B02F779FEDC /* PebbleRemoteUIAudit.swift */; };
+		F8D0148F38AFF0CC67D8639A /* Tour+Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD61B56BC9F001160422603C /* Tour+Reviews.swift */; };
+		FC5A80E3CB89D71069D4E84D /* AuditSession+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B37E7E11494C17F39ABEC6 /* AuditSession+Helpers.swift */; };
+		FFDAD5DDA8B794C81D62033E /* Tour+Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A0D4A338854A261029678 /* Tour+Chats.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2685BB6A4D5F6E39816AF1C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BA0FF71622171A8D29EC98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377B174F0F16E0761F8D8D01;
+			remoteInfo = PebbleRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11B009905CEC18BBFFDFB6DF /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		167C3F03505790BEE0C6CE0B /* Tour+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Control.swift"; sourceTree = "<group>"; };
+		1F0706D0507493B28CE3468E /* Tour+Looks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Looks.swift"; sourceTree = "<group>"; };
+		20991B9C079B1C948E19C69E /* PebbleRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PebbleRemoteApp.swift; sourceTree = "<group>"; };
+		267026F5069F6B94FEF826FB /* Tour+Walkthroughs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Walkthroughs.swift"; sourceTree = "<group>"; };
+		2F74D45248937ABE77037358 /* Tour+PebbleTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+PebbleTab.swift"; sourceTree = "<group>"; };
+		3629912325D01EADDDECC5C8 /* AuditSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditSession.swift; sourceTree = "<group>"; };
+		489CF2B0D7605D162E16B2E6 /* PebbleRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PebbleRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBA02BBB3318558F0795BE7 /* AuditSession+Sweep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuditSession+Sweep.swift"; sourceTree = "<group>"; };
+		66263B684D145B02F779FEDC /* PebbleRemoteUIAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PebbleRemoteUIAudit.swift; sourceTree = "<group>"; };
+		7170104968E67F3166911CE7 /* PebbleRemote */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PebbleRemote; path = .; sourceTree = SOURCE_ROOT; };
+		76A62048842FAFC4EFE41816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C237DDF6190F3303B3217FC /* Tour+Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Conversation.swift"; sourceTree = "<group>"; };
+		A52A0D4A338854A261029678 /* Tour+Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Chats.swift"; sourceTree = "<group>"; };
+		AD61B56BC9F001160422603C /* Tour+Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tour+Reviews.swift"; sourceTree = "<group>"; };
+		BA81AF175BF84492F6B23A01 /* PebbleRemoteUIAudit.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PebbleRemoteUIAudit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B37E7E11494C17F39ABEC6 /* AuditSession+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuditSession+Helpers.swift"; sourceTree = "<group>"; };
+		F645520F7EF916F39C690453 /* AuditLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F6D238EA7D22A985053EFD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BEA95855165DE3A72211D /* PebbleDesign in Frameworks */,
+				DB1DC8576C738979901EE636 /* PebbleProtocol in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832DA7D80098389389E53313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D85F861DC13AC7274B93D88 /* PebbleRemoteUI in Frameworks */,
+				555D326655696F511DD2B212 /* PebbleRemoteKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23227195F095F64524ABDF05 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7170104968E67F3166911CE7 /* PebbleRemote */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		6364CFA6AB15BB9345BEC7FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				76A62048842FAFC4EFE41816 /* Assets.xcassets */,
+				11B009905CEC18BBFFDFB6DF /* Base.xcconfig */,
+				20991B9C079B1C948E19C69E /* PebbleRemoteApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6855054F7B3D034351C30F2E /* UIAudit */ = {
+			isa = PBXGroup;
+			children = (
+				F645520F7EF916F39C690453 /* AuditLog.swift */,
+				3629912325D01EADDDECC5C8 /* AuditSession.swift */,
+				D2B37E7E11494C17F39ABEC6 /* AuditSession+Helpers.swift */,
+				5CBA02BBB3318558F0795BE7 /* AuditSession+Sweep.swift */,
+				66263B684D145B02F779FEDC /* PebbleRemoteUIAudit.swift */,
+				A52A0D4A338854A261029678 /* Tour+Chats.swift */,
+				167C3F03505790BEE0C6CE0B /* Tour+Control.swift */,
+				9C237DDF6190F3303B3217FC /* Tour+Conversation.swift */,
+				1F0706D0507493B28CE3468E /* Tour+Looks.swift */,
+				2F74D45248937ABE77037358 /* Tour+PebbleTab.swift */,
+				AD61B56BC9F001160422603C /* Tour+Reviews.swift */,
+				267026F5069F6B94FEF826FB /* Tour+Walkthroughs.swift */,
+			);
+			path = UIAudit;
+			sourceTree = "<group>";
+		};
+		A85CEDAEA84EC2C89A241375 = {
+			isa = PBXGroup;
+			children = (
+				6364CFA6AB15BB9345BEC7FF /* App */,
+				23227195F095F64524ABDF05 /* Packages */,
+				6855054F7B3D034351C30F2E /* UIAudit */,
+				DA4D6835FE7003BA0A257A08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA4D6835FE7003BA0A257A08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489CF2B0D7605D162E16B2E6 /* PebbleRemote.app */,
+				BA81AF175BF84492F6B23A01 /* PebbleRemoteUIAudit.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		377B174F0F16E0761F8D8D01 /* PebbleRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D36C6D30FF2C5F6517BBE1 /* Build configuration list for PBXNativeTarget "PebbleRemote" */;
+			buildPhases = (
+				A97F7C8DE8EF20C6EED8C4B4 /* Sources */,
+				1409E6D9DB814D92F2E2EF66 /* Resources */,
+				832DA7D80098389389E53313 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PebbleRemote;
+			packageProductDependencies = (
+				894564D22804AE3C65BE3474 /* PebbleRemoteUI */,
+				4C08F7DF88D05F8E3261B880 /* PebbleRemoteKit */,
+			);
+			productName = PebbleRemote;
+			productReference = 489CF2B0D7605D162E16B2E6 /* PebbleRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89DFC9E498B27C358F24932E /* PebbleRemoteUIAudit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79356A27E36E1D73AD662D1F /* Build configuration list for PBXNativeTarget "PebbleRemoteUIAudit" */;
+			buildPhases = (
+				5C4C1656B7C09630099056A8 /* Sources */,
+				3F6D238EA7D22A985053EFD1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF6D93C99E6CD74C7C940D70 /* PBXTargetDependency */,
+			);
+			name = PebbleRemoteUIAudit;
+			packageProductDependencies = (
+				2C8E2CD9BDF67347E1BE4DAE /* PebbleDesign */,
+				5C6BA19BD755269E1AD59117 /* PebbleProtocol */,
+			);
+			productName = PebbleRemoteUIAudit;
+			productReference = BA81AF175BF84492F6B23A01 /* PebbleRemoteUIAudit.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BA0FF71622171A8D29EC98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					377B174F0F16E0761F8D8D01 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					89DFC9E498B27C358F24932E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 377B174F0F16E0761F8D8D01;
+					};
+				};
+			};
+			buildConfigurationList = 163718DE18152340825F0556 /* Build configuration list for PBXProject "PebbleRemote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A85CEDAEA84EC2C89A241375;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6455B5727EAD3FE6B9DC0CAD /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DA4D6835FE7003BA0A257A08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				377B174F0F16E0761F8D8D01 /* PebbleRemote */,
+				89DFC9E498B27C358F24932E /* PebbleRemoteUIAudit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1409E6D9DB814D92F2E2EF66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEDD6A222512F134F988CA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C4C1656B7C09630099056A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C97262B4C464F6C1165A5A8 /* AuditLog.swift in Sources */,
+				FC5A80E3CB89D71069D4E84D /* AuditSession+Helpers.swift in Sources */,
+				2DF015350C82907472C5E8C8 /* AuditSession+Sweep.swift in Sources */,
+				0B5534F4AB15CDD6AD507C7B /* AuditSession.swift in Sources */,
+				DE4E6C840DDAFBE25D83EC1D /* PebbleRemoteUIAudit.swift in Sources */,
+				FFDAD5DDA8B794C81D62033E /* Tour+Chats.swift in Sources */,
+				BB7F4C04B6C29C28B4C5F97C /* Tour+Control.swift in Sources */,
+				1FF8B7B0C2408B79165553A1 /* Tour+Conversation.swift in Sources */,
+				239C8CB693A7C78F9084C78D /* Tour+Looks.swift in Sources */,
+				B0204F40878D58944A6927BA /* Tour+PebbleTab.swift in Sources */,
+				F8D0148F38AFF0CC67D8639A /* Tour+Reviews.swift in Sources */,
+				71F5F8233C157C91B0F967E3 /* Tour+Walkthroughs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97F7C8DE8EF20C6EED8C4B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3376AEE194B76193ADB9434F /* PebbleRemoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF6D93C99E6CD74C7C940D70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377B174F0F16E0761F8D8D01 /* PebbleRemote */;
+			targetProxy = 2685BB6A4D5F6E39816AF1C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B1F8F067ADC9AD3F3A19DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B009905CEC18BBFFDFB6DF /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2B9EEC108C894482FBBDBD9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B009905CEC18BBFFDFB6DF /* Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).PebbleRemoteUIAudit";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PebbleRemote;
+			};
+			name = Debug;
+		};
+		8B15A815D7F761367AD5FC6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B009905CEC18BBFFDFB6DF /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8B2FA87C8A896F176D581AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		CA75C53682FD082A3F3EC474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F22A75177CF59F7B485D9791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B009905CEC18BBFFDFB6DF /* Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).PebbleRemoteUIAudit";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PebbleRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163718DE18152340825F0556 /* Build configuration list for PBXProject "PebbleRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA75C53682FD082A3F3EC474 /* Debug */,
+				8B2FA87C8A896F176D581AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		79356A27E36E1D73AD662D1F /* Build configuration list for PBXNativeTarget "PebbleRemoteUIAudit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9EEC108C894482FBBDBD9B /* Debug */,
+				F22A75177CF59F7B485D9791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8D36C6D30FF2C5F6517BBE1 /* Build configuration list for PBXNativeTarget "PebbleRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B15A815D7F761367AD5FC6C /* Debug */,
+				13B1F8F067ADC9AD3F3A19DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6455B5727EAD3FE6B9DC0CAD /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C8E2CD9BDF67347E1BE4DAE /* PebbleDesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PebbleDesign;
+		};
+		4C08F7DF88D05F8E3261B880 /* PebbleRemoteKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PebbleRemoteKit;
+		};
+		5C6BA19BD755269E1AD59117 /* PebbleProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PebbleProtocol;
+		};
+		894564D22804AE3C65BE3474 /* PebbleRemoteUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PebbleRemoteUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 34BA0FF71622171A8D29EC98 /* Project object */;
+}

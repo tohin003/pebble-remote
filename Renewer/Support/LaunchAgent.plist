@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  The login agent that starts Pebble Remote Renewer, installed by Renewer/install.sh as
+  ~/Library/LaunchAgents/io.github.tohin003.PebbleRemoteRenewer.plist. install.sh fills in ProgramArguments with the
+  installed app's executable; nothing else changes.
+  - RunAtLoad: it starts at login (and when install.sh loads it).
+  - KeepAlive SuccessfulExit false: started again after a crash, but Quit (a clean exit) stays quit until the next login.
+  - LimitLoadToSessionType Aqua: only in a logged-in desktop session, where the menu bar and Xcode's sign-in are.
+-->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>io.github.tohin003.PebbleRemoteRenewer</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>INSTALL.SH WRITES THE APP'S EXECUTABLE HERE</string>
+	</array>
+	<key>AssociatedBundleIdentifiers</key>
+	<array>
+		<string>io.github.tohin003.PebbleRemoteRenewer</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>ThrottleInterval</key>
+	<integer>60</integer>
+	<key>LimitLoadToSessionType</key>
+	<string>Aqua</string>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+</dict>
+</plist>

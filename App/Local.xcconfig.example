@@ -1,0 +1,9 @@
+// Copy this file to App/Local.xcconfig (git-ignored; never commit it) and fill in your own values.
+// App/Base.xcconfig includes it when it exists, so these override the defaults there, for the app and its UI audit.
+
+// Your team's ID: Xcode, Settings, Accounts, your Apple ID, the team's "Team ID" (10 characters).
+DEVELOPMENT_TEAM = ABCDE12345
+
+// A bundle id prefix of your own, in reverse-DNS form. Free provisioning needs bundle ids no other team has
+// registered, so the default in Base.xcconfig works only for its author. The app becomes $(BUNDLE_ID_PREFIX).PebbleRemote.
+BUNDLE_ID_PREFIX = io.github.your-name
